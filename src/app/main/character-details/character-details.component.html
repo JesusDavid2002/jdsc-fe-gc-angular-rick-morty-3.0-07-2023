@@ -1,0 +1,26 @@
+<app-navbar>
+    <div class="container">
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-4">
+                <div *ngFor="let personaje of characters">
+                    <h1 class="my-3">{{ personaje.name }}</h1>
+                    <p class="my-3">Id: {{personaje.id}}</p>     
+                    <p class="my-3">Status: {{personaje.status}}</p> 
+                    <p class="my-3">Specie: {{personaje.species}}</p> 
+                    <p class="my-3">Gender: {{personaje.gender}}</p>
+                    <p class="my-3">Origin: {{personaje.origin.name}}</p> 
+                    <p class="my-3">Location: {{personaje.location.name}}</p>
+                </div>
+            </div>
+            <div class="col my-4" *ngFor="let personaje of characters">
+                <img [src]="personaje.image" alt="Imagen de {{personaje.name}}">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <a routerLink="/character-list" class="btn btn-light">Go back to characters</a>
+            </div>
+        </div>
+    </div>
+</app-navbar>

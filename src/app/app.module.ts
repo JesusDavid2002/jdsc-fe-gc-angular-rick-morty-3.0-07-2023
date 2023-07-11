@@ -8,8 +8,9 @@ import { LoginComponent } from './auth/login/login.component';
 import { HomeComponent } from './main/home/home.component';
 import { CharacterListComponent } from './main/character-list/character-list.component';
 import { AboutComponent } from './main/about/about.component';
-import { DetailsComponent } from './main/details/details.component';
 import { FormsModule } from '@angular/forms';
+import { NavbarComponent } from './main/navbar/navbar.component';
+import { CharacterDetailsComponent } from './main/character-details/character-details.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { FormsModule } from '@angular/forms';
     HomeComponent,
     CharacterListComponent,
     AboutComponent,
-    DetailsComponent
+    NavbarComponent,
+    CharacterDetailsComponent
   ],
   imports: [
     BrowserModule,

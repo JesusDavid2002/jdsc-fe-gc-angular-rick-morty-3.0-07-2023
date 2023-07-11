@@ -8,4 +8,6 @@ import datos from 'src/assets/database.json'
 })
 export class CharacterListComponent{
   datosArray: any[] = datos.characters;
+
+  
 }

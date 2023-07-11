@@ -6,6 +6,7 @@ import { CharacterListComponent } from './main/character-list/character-list.com
 import { AboutComponent } from './main/about/about.component';
 import { LoginComponent } from './auth/login/login.component';
 import { RegisterComponent } from './auth/register/register.component';
+import { CharacterDetailsComponent } from './main/character-details/character-details.component';
 
 const routes: Routes = [
   {
@@ -27,6 +28,9 @@ const routes: Routes = [
   {
     path:'register',
     component: RegisterComponent
+  },{
+    path:'character-detail/:id',
+    component: CharacterDetailsComponent
   }
 ];
 
