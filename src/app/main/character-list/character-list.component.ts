@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import datos from 'src/assets/database.json'
+import datos from 'src/assets/database.json';
 
 @Component({
   selector: 'app-character-list',
@@ -8,6 +8,4 @@ import datos from 'src/assets/database.json'
 })
 export class CharacterListComponent{
   datosArray: any[] = datos.characters;
-
-  
 }
