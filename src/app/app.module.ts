@@ -11,6 +11,7 @@ import { AboutComponent } from './main/about/about.component';
 import { FormsModule } from '@angular/forms';
 import { NavbarComponent } from './main/navbar/navbar.component';
 import { CharacterDetailsComponent } from './main/character-details/character-details.component';
+import { AddCharacterComponent } from './main/add-character/add-character.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { CharacterDetailsComponent } from './main/character-details/character-de
     CharacterListComponent,
     AboutComponent,
     NavbarComponent,
-    CharacterDetailsComponent
+    CharacterDetailsComponent,
+    AddCharacterComponent
   ],
   imports: [
     BrowserModule,
