@@ -1,5 +1,5 @@
 export class Characters {
-    id: number = 1;
+    id?: number;
     name: string = '';
     status: string = '';
     species: string = '';

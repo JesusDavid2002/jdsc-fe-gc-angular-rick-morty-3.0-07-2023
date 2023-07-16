@@ -9,6 +9,8 @@ import { AddCharacterComponent } from './main/add-character/add-character.compon
 
 import { LoginComponent } from './auth/login/login.component';
 import { RegisterComponent } from './auth/register/register.component';
+import { EditCharacterComponent } from './main/edit-character/edit-character.component';
+
 const routes: Routes = [
   {
     path:'',
@@ -19,7 +21,7 @@ const routes: Routes = [
     component: CharacterListComponent
   },
   {
-    path:'about-us',
+    path:'about',
     component: AboutComponent
   },
   {
@@ -34,8 +36,12 @@ const routes: Routes = [
     component: CharacterDetailsComponent
   },
   {
-    path:'character-add',
+    path:'create-character',
     component: AddCharacterComponent
+  },
+  {
+    path:'edit-character/:id',
+    component: EditCharacterComponent
   }
 ];
 

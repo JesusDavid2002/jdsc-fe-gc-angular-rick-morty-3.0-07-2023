@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+import { Characters } from 'src/app/models/characters.model';
+import { CharactersService } from 'src/app/services/characters.service';
 
 @Component({
   selector: 'app-add-character',
@@ -7,4 +10,12 @@ import { Component } from '@angular/core';
 })
 export class AddCharacterComponent {
 
+  character: Characters = new Characters();
+
+  constructor(private characterService: CharactersService, private router: Router){}
+
+  createCharacter(): void{
+    this.characterService.create(this.character).subscribe();
+    this.router.navigateByUrl("/character-list");
+  }
 }
